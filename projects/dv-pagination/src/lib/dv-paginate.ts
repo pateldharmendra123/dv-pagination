@@ -1,13 +1,17 @@
-export default( totalItems: number,  currentPage: number = 1,  pageSize: number = 10,  maxPages: number = 10) => function dvpaginate() {
-
+export function paginate(
+  totalItems: number,
+  currentPage: number = 1,
+  pageSize: number = 10,
+  maxPages: number = 10
+) {
   // calculate total pages
   let totalPages = Math.ceil(totalItems / pageSize);
 
   // ensure current page isn't out of range
-  if (currentPage < 1) { 
-      currentPage = 1; 
-  } else if (currentPage > totalPages) { 
-      currentPage = totalPages; 
+  if (currentPage < 1) {
+    currentPage = 1;
+  } else if (currentPage > totalPages) {
+    currentPage = totalPages;
   }
 
   let startPage: number, endPage: number;

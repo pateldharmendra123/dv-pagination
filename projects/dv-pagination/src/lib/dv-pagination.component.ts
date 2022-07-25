@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChanges } from '@angular/core';
-import dvpaginate from './dv-paginate';
+import { paginate } from './dv-paginate';
 
 
 @Component({
@@ -53,7 +53,7 @@ export class DvPaginationComponent implements OnInit,OnChanges {
 
       setPage(page: number) {
         // get new pager object for specified page
-        this.pager = dvpaginate(this.items.length, page, this.pageSize, this.maxPages);
+        this.pager = paginate(this.items.length, page, this.pageSize, this.maxPages);
 
         // get new page of items from items array
         var pageOfItems = this.items.slice(this.pager.startIndex, this.pager.endIndex + 1);
