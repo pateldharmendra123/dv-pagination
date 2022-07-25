@@ -5,6 +5,11 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "dv-pagination": [
+        "dist/dv-pagination"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
