@@ -10,6 +10,7 @@
         "dist/dv-pagination"
       ]
     },
+    "strictPropertyInitialization": false,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
