@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { DvPaginationComponent } from './dv-pagination.component';
 
-
+ 
 
 @NgModule({
   declarations: [
