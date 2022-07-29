@@ -33,20 +33,10 @@ Add code in component ts file
   ----------------------------------------- 
 
 <pre>
->   <div class="text-center">
->       <div *ngFor="let item of pageOfItems">{{item.name}}</div>
->   </div>
->   <div class="text-center"> 
->       <dv-pagination [items]="items" (changePage)="onChangePage($event)"></dv-pagination>  
->   </div> 
+
+ *ngFor="let item of pageOfItems"
+ {{item.name}}
+ <dv-pagination [items]="items" (changePage)="onChangePage($event)">
+ </dv-pagination>  
 </pre>
-  
-# <div class="text-center">
-# <div *ngFor="let item of pageOfItems">{{item.name}}</div>
-# </div>
-# </div>
-# <dv-pagination [items]="items" (changePage)="onChangePage($event)"> 
-# </dv-pagination> 
-# </div> 
- 
   
