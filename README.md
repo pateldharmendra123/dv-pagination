@@ -6,8 +6,10 @@ Angular Pagination Component
 
 Usage instructions available at https://github.com/pateldharmendra123/dv-pagination/
 
-
-in component ts file
+<h5>How to Used this package</h5>
+-----------------------------------------------
+Add code in component ts file
+------------------------------------------------------
 <code>
   items:any = [];
   pageOfItems: Array<any>;
@@ -27,8 +29,9 @@ in component ts file
   }
 </code>
   
-  
-  in HTML PAGe
+  -------------------------------------------
+  Add this code in HTML Page
+  -----------------------------------------
   <code>  
   <div class="text-center">
       <div *ngFor="let item of pageOfItems">{{item.name}}</div>
