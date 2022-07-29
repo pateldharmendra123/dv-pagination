@@ -10,18 +10,18 @@ Usage instructions available at https://github.com/pateldharmendra123/dv-paginat
 -----------------------------------------------
 Add code in component ts file
 ------------------------------------------------------
-````
-```
-  items:any = [];
-  pageOfItems: Array<any>;
 
-  constructor() { }
 
-  ngOnInit() {
-      // an example array of 150 items to be paged
-      this.items = Array(150).fill(0).map((x, i) => ({ id: (i + 1), name: `Item ${i + 1}`}));
-      console.log(this.items);
-  }
+> items:any = [];
+> pageOfItems: Array<any>;
+> 
+> constructor() { }
+> 
+ > ngOnInit() {
+ >     // an example array of 150 items to be paged
+ >      this.items = Array(150).fill(0).map((x, i) => ({ id: (i + 1), name: `Item ${i + 1}`}));
+ >      console.log(this.items);
+ >  }
 
   onChangePage(pageOfItems:any) { 
       console.log(pageOfItems);
