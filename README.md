@@ -10,7 +10,8 @@ Usage instructions available at https://github.com/pateldharmendra123/dv-paginat
 -----------------------------------------------
 Add code in component ts file
 ------------------------------------------------------
-
+````
+```
   items:any = [];
   pageOfItems: Array<any>;
 
@@ -27,7 +28,10 @@ Add code in component ts file
       // update current page of items
       this.pageOfItems = pageOfItems;
   }
-  
+
+```
+````
+
   -------------------------------------------
   Add this code in HTML Page
   -----------------------------------------
