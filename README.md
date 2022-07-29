@@ -36,7 +36,12 @@ Add code in component ts file
 
  *ngFor="let item of pageOfItems"
  {{item.name}}
- <dv-pagination [items]="items" (changePage)="onChangePage($event)">
- </dv-pagination>  
+ <dv-pagination 
+ [items]="items" 
+ (changePage)="onChangePage($event)"
+ >
+ </
+ dv-pagination
+ >  
 </pre>
   
