@@ -11,7 +11,6 @@ Usage instructions available at https://github.com/pateldharmendra123/dv-paginat
 Add code in component ts file
 ------------------------------------------------------
 
-<sup>
 > items:any = [];
 > pageOfItems: Array<any>;
 > 
@@ -28,15 +27,15 @@ Add code in component ts file
 >       
 >       this.pageOfItems = pageOfItems;
 >   }
-</sup>
+  
   -------------------------------------------
   Add this code in HTML Page
   -----------------------------------------
- <sup>
+
 >   <div class="text-center">
 >       <div *ngFor="let item of pageOfItems">{{item.name}}</div>
 >   </div>
 >   <div class="text-center"> 
 >       <dv-pagination [items]="items" (changePage)="onChangePage($event)"></dv-pagination>  
 >   </div> 
-</sup>
+
